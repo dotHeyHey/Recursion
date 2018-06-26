@@ -5,6 +5,16 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+console.log(`
+_   _            _   _            
+| | | |          | | | |           
+| |_| | ___ _   _| |_| | ___ _   _ 
+|  _  |/ _ \ | | |  _  |/ _ \ | | |
+| | | |  __/ |_| | | | |  __/ |_| |
+\_| |_/\___|\__, \_| |_/\___|\__, |
+            __/ |            __/ |
+           |___/            |___/ `)
+
 rl.question('What word do you want me to analyze? ', (answer) => {
   permutations = getCombos(answer)
   
